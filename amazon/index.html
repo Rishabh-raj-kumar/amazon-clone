@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HamstersCode</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../icons/green backpack.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+</head>
+
+<body>
+    <header>
+        <div id="container">
+            <div id="head"><h2>Hamsters <span>Shop</span></h2></div>
+            <div id="search-box">
+                <input type="text" name="" id="search" placeholder="Search here... ">
+                <span id="close"> x </span>
+            </div>
+            <div id="social">
+                <span id="log"><i class="fa-brands fa-facebook"></i></span>
+                <span id="log"><i class="fa-brands fa-instagram"></i></span>
+                <span id="log"><i class="fa-brands fa-youtube"></i></span>
+            </div>
+        </div>
+
+        <nav>
+            <ul id="united">
+                <li>
+                    <a href="index.html">all</a>
+                </li>
+
+                <li><a href="computer.html">Computer</a></li>
+                <li><a href="laptops.html">Laptops</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="dress.html">Clothes</a></li>
+                <li><a href="mobiles.html">Mobile</a></li>
+                <li><a href="fruits.html">Fruits</a></li>
+                <li class="cart-icon"><a href="shop_cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+
+                <button class="nav-btn"><i class="fa-solid fa-bars"></i></button>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="index_main">
+        <section class="imagebox">
+            <img src="../images/board1.jpg" height="430" alt="" class="imgTag">
+            <div class="btnBox">
+                <button id="next" onclick="next()"><i class="fa-solid fa-arrow-right"></i></button>
+                <button id="back" onclick="back()"><i class="fa-solid fa-arrow-left"></i></button>
+            </div>
+        </section>
+
+        <section class="TBox">
+            <div class="main-ad-box">
+                <div id="heading1">
+                    <h2>Exclusive Offers on First.</h2>
+                </div>
+                <div id="Tbox-container">
+                    <div id="box1">
+                        <div id="imagineBox">
+                            <img src="../images/book1.jpg" alt="">
+                        </div>
+                        <p>free books.</p>
+                    </div>
+                    <div id="box1">
+                        <div id="imagineBox">
+                            <img src="../images/car.png" alt="">
+                        </div>
+                        <p>car service.</p>
+                    </div>
+                    <div id="box1">
+                        <div id="imagineBox">
+                            <img src="../images/book3.jpg" alt="">
+                        </div>
+                        <p>book on demand.</p>
+                    </div>
+                    <div id="box1">
+                        <div id="imagineBox">
+                            <img src="../images/computer5.jpg" alt="">
+                        </div>
+                        <p>computer on tree.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-ad-box">
+                <div id="heading1">
+                    <h2>upto 70% off on deals.</h2>
+                </div>
+                <div id="Tbox-container">
+                    <div id="box1">
+                        <div id="imagineBox">
+                            <img src="../images/mobile1.jpg" alt="">
+                        </div>
+                        <p>get best ringtone.</p>
+                    </div>
+                    <div id="box1">
+                        <div id="imagineBox">
+                            <img src="../images/computer4.jpg" alt="">
+                        </div>
+                        <p>boom boom computer</p>
+                    </div>
+                    <div id="box1">
+                        <div id="imagineBox">
+                            <img src="../images/anar.jpg" alt="">
+                        </div>
+                        <p>get to eat anar.</p>
+                    </div>
+                    <div id="box1">
+                        <div id="imagineBox">
+                            <img src="../images/purse.jpg" alt="">
+                        </div>
+                        <p>purse puursue.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-ad-box">
+                <div id="heading1">
+                    <h2>Get the Best of next.</h2>
+                </div>
+                <div id="Tbox-container">
+                    <div id="box1">
+                        <div id="imagineBox">
+                            <img src="../images/laptop1.jpg" alt="">
+                        </div>
+                        <p>laptops on demand.</p>
+                    </div>
+                    <div id="box1">
+                        <div id="imagineBox">
+                            <img src="../images/cloth.png" alt="">
+                        </div>
+                        <p>free handpick clothes</p>
+                    </div>
+                    <div id="box1">
+                        <div id="imagineBox">
+                            <img src="../images/iphone1.png" alt="">
+                        </div>
+                        <p>iphone ringtones exclusive.</p>
+                    </div>
+                    <div id="box1">
+                        <div id="imagineBox">
+                            <img src="../images/guava.jpg" alt="">
+                        </div>
+                        <p>guava eating next.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <div id="adBanner1">
+
+         </div>
+        <section id="dealBox">
+            <div id="headings1">
+                <h2>Todays deal.</h2>
+                <p><a href="#">see all deals</a></p>
+            </div>
+            <div class="clg-box">
+                <div id="grindBox">
+                    <div id="imgBox">
+                        <img src="../images/bags.jfif" alt="">
+                    </div>
+                    <div id="infoBox">
+                        <samp>upto 58% off</samp>
+                    </div>
+                </div>
+                <div id="grindBox">
+                    <div id="imgBox">
+                        <img src="../images/book2.jpg" alt="">
+                    </div>
+                    <div id="infoBox">
+                        <samp>upto 75% off</samp>
+                    </div>
+                </div>
+                <div id="grindBox">
+                    <div id="imgBox">
+                        <img src="../images/book3.jpg" alt="">
+                    </div>
+                    <div id="infoBox">
+                        <samp>upto 42% off</samp>
+                    </div>
+                </div>
+                <div id="grindBox">
+                    <div id="imgBox">
+                        <img src="../images/book5.jpg" alt="">
+                    </div>
+                    <div id="infoBox">
+                        <samp>upto 35% off</samp>
+                    </div>
+                </div>
+                <div id="grindBox">
+                    <div id="imgBox">
+                        <img src="../images/cloth.png" alt="">
+                    </div>
+                    <div id="infoBox">
+                        <samp>upto 27% off</samp>
+                    </div>
+                </div>
+                <div id="grindBox">
+                    <div id="imgBox">
+                        <img src="../images/utensils2.jpg" alt="">
+                    </div>
+                    <div id="infoBox">
+                        <samp>upto 65% off</samp>
+                    </div>
+                </div>
+                <div id="grindBox">
+                    <div id="imgBox">
+                        <img src="../images/utensils5.jpg" alt="">
+                    </div>
+                    <div id="infoBox">
+                        <samp>upto 43% off</samp>
+                    </div>
+                </div>
+                <div id="grindBox">
+                    <div id="imgBox">
+                        <img src="../images/utensils3.jpg" alt="">
+                    </div>
+                    <div id="infoBox">
+                        <samp>upto 67% off</samp>
+                    </div>
+                </div>
+                <div id="grindBox">
+                    <div id="imgBox">
+                        <img src="../images/utensils6.jpg" alt="">
+                    </div>
+                    <div id="infoBox">
+                        <samp>upto 9% off</samp>
+                    </div>
+                </div>
+                <div id="grindBox">
+                    <div id="imgBox">
+                        <img src="../images/utensils1.jpg" alt="">
+                    </div>
+                    <div id="infoBox">
+                        <samp>upto 35% off</samp>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="adBanner2">
+
+        </div>
+        <section id="dealBox">
+            <div id="headings1">
+                <h2>Get Alll the best Utensils.</h2>
+                <p><a href="#">see all deals</a></p>
+            </div>
+            <div class="clg-box">
+                <div id="grindBox">
+                    <div id="imgBox">
+                        <img src="../images/utensils1.jpg" alt="">
+                    </div>
+                </div>
+                <div id="grindBox">
+                    <div id="imgBox">
+                        <img src="../images/utensils2.jpg" alt="">
+                    </div>
+                </div>
+                <div id="grindBox">
+                    <div id="imgBox">
+                        <img src="../images/utensils3.jpg" alt="">
+                    </div>
+                </div>
+                <div id="grindBox">
+                    <div id="imgBox">
+                        <img src="../images/utensils4.jpg" alt="">
+                    </div>
+                </div>
+                <div id="grindBox">
+                    <div id="imgBox">
+                        <img src="../images/utensils5.jpg" alt="">
+                    </div>
+                </div>
+                <div id="grindBox">
+                    <div id="imgBox">
+                        <img src="../images/utensils7.jpg" alt="">
+                    </div>
+                </div>
+                <div id="grindBox">
+                    <div id="imgBox">
+                        <img src="../images/utensils8.jpg" alt="">
+                    </div>
+                </div>
+                <div id="grindBox">
+                    <div id="imgBox">
+                        <img src="../images/utensils3.jpg" alt="">
+                    </div>
+                </div>
+                <div id="grindBox">
+                    <div id="imgBox">
+                        <img src="../images/utensils6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="block-container">
+            <div id="block1">
+                <h2>Hamsters <span>Shop</span></h2>
+                <address>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iusto voluptas quisquam repellendus
+                        temporibus quam doloribus.</p>
+                    <samp>JH01,ranchi,Jharkhand.</samp>
+                    <summary>how12rishabh@gmail.com</summary>
+                    <pre>+91 1234567890</pre>
+                </address>
+            </div>
+            <div id="block1">
+                <h3>Our Collections</h3>
+                <ul>
+                    <li><a href="dress.html">Dress Collections.</a></li>
+                    <li><a href="mobiles.html">Mobiles Collection.</a></li>
+                    <li><a href="laptops.html">Laptop Collections.</a></li>
+                    <li><a href="computer.html">Computer Collections.</a></li>
+                    <li><a href="books.html">Book Collections.</a></li>
+                </ul>
+            </div>
+            <div id="block1">
+                <h3>About me.</h3>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="info.html">Information</a></li>
+                    <li><a href="shop_cart.html">checkOut</a></li>
+                </ul>
+            </div>
+            <div id="block1">
+                <h2>Letter.</h2>
+                <input type="text" placeholder="Your Name">
+                <textarea name="" id="" cols="30" rows="10" placeholder="type here something"></textarea>
+            </div>
+        </div>
+        <strong>These website is build by Rishabh kumar.</strong>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
